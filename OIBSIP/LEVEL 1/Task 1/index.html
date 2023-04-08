@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Boat landing website page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+     <div class="container">
+         <div class="navbar">
+                <img src="images/boat pic.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="">Sound Design</a></li>
+                        <li><a href="">Ear Pods</a></li>
+                        <li><a href="">Bluetooth Layout</a></li>
+                        <li><a href="">Others</a></li>
+                    </ul>
+               </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+      
+           <div class="row">
+               <div class="col-1">
+                      <h2>boAt Rockerz 510</h2><!--title-->
+                      <h3>Wireless 50mm dynamic drivers</h3>
+                      <p>(Music upto 20 hours/400mah battery)</p>
+                      <h4>₹ 999</h4>
+                      <button type="button">Buy Now<img src="images/arrow.png" ></button>
+               </div>
+               <div class="col-2">
+                      <img src="images/headsetpic.webp" class="headset">
+                      <div class="color-box"></div>
+                      <div class="add-btn">
+                          <img src="images/add.png">
+                          <p><small>Add to cart</small></p>
+                      </div>
+               </div>
+           </div>
+            
+           <div class="social-links">
+
+                     <img src="images/fb.png">
+                     <img src="images/ig.png">
+                     <img src="images/tw.png">
+
+           </div>
+        
+     </div>
+
+     <script>
+           var menuList = document.getElementById("menuList");
+           menuList.style.maxHeight = "0px";
+           function togglemenu(){
+                if(menuList.style.maxHeight == "0px")
+                   {
+                    menuList.style.maxHeight = "130px";
+                   }
+                   else
+                   {
+                    menuList.style.maxHeight = "0px";
+                   }
+                
+           }
+     </script>
+</body>
+</html>
